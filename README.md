@@ -17,4 +17,5 @@ covering core AWS architecture.
 
 ## Current status
 🔵 Studying: AWS Certified Cloud Practitioner (CLF-C02)
+
 ⬜ Next: AWS Solutions Architect Associate (SAA-C03)
