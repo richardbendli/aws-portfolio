@@ -13,7 +13,7 @@ covering core AWS architecture.
 ## What you'll find here
 
 - [00-clf-c02-cloud-practitioner](https://github.com/richardbendli/aws-portfolio/tree/main/00-clf-c02-cloud-practitioner) — Cloud fundamentals and weekly study log
-- [01-saa-c03-solutions-architect](../aws-portfolio/01-saa-c03-solutions-architect/) — Solutions Architect Associate projects with Terraform code
+- [01-saa-c03-solutions-architect](https://github.com/richardbendli/aws-portfolio/tree/main/01-saa-c03-solutions-architect) — Solutions Architect Associate projects with Terraform code
 
 ## Current status
 🔵 Studying: AWS Certified Cloud Practitioner (CLF-C02)
