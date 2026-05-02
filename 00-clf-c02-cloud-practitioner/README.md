@@ -6,7 +6,7 @@
 
 | Folder                                       | Contents                                                     |
 | -------------------------------------------- | ------------------------------------------------------------ |
-| [01-Compute](../00-clf-c02-cloud-practitioner/01-Compute/) | EC2, ECS, Elastic Beanstalk, Lambda, Load Balancers                          |
+| [01-Compute](../00-clf-c02-cloud-practitioner/01-Compute/) | [EC2](../00-clf-c02-cloud-practitioner/01-Compute/EC2.md), [ECS](../00-clf-c02-cloud-practitioner/01-Compute/ECS.md), Elastic Beanstalk, Lambda, Load Balancers                          |
 | [02-Storage](../02-Storage/)                               | EBS, EFS, Glacier, S3                                         |
 | [03-Networking](../03-Networking/)                            | CloudFront, Internet Gateway, NACLs, NAT Gateway, Route 53, Route Tables, Security Groups, Subnets, VPC   |
 | [04-Databases](../04-Databases/)                             | Aurora, Caching, DynamoDB, RDS, Redshift                         |
