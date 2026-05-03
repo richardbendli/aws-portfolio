@@ -26,3 +26,20 @@ without managing the underlying cluster infrastructure.
 
 ---
 
+## 💡 Good to Know
+- ECS with **Fargate** = serverless containers (no EC2 instances to manage)
+- ECS vs EKS: ECS is AWS-native and simpler. EKS is managed Kubernetes
+  for teams already using Kubernetes.
+- At CLF-C02 level: know what ECS does and when you'd choose it —
+  deep configuration is not required.
+- Fargate is NOT the same as Lambda. Fargate runs containers,
+  Lambda runs individual functions.
+
+---
+
+## ⚠️ Easy to Mix Up
+- **Fargate** ≠ **Lambda** — both are serverless but:
+  Fargate = containerised workloads
+  Lambda = short event-driven functions
+- **ECS** ≠ **EKS** — ECS is AWS-native, EKS is managed Kubernetes
+
