@@ -83,7 +83,4 @@ depending on instance type.
 - **Security Groups** = instance level, stateful
   (return traffic automatically allowed)
 - **NACLs** = subnet level, stateless
-  (return traffic must be explicitly allowed) (see [[NACLs]])
-
----
-
+  (return traffic must be explicitly allowed)
