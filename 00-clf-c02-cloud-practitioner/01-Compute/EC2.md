@@ -55,6 +55,20 @@ depending on instance type.
 
 ---
 
+## 🌐 Networking
+- Every instance always gets a **private IP address**.
+  A public IP is optional and assigned automatically if enabled.
+- Public IP is **released when you stop** the instance.
+  Use an **Elastic IP** if you need a fixed public address.
+- EC2 instances must live inside a **subnet** within a **VPC**
+- **Elastic Network Interface (ENI)** — the virtual network card
+  attached to your instance. You can attach multiple ENIs to a single instance.
+- Traffic into and out of your instance is controlled at two layers:
+  - Security Group → attached to the instance
+  - NACL → attached to the subnet
+
+---
+
 ## 💡 Good to Know
 - Spot instances are the cheapest option but AWS can reclaim them
   at any time with only a **2-minute warning** — only suitable for
