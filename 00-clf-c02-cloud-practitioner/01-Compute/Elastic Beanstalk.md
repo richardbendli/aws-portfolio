@@ -28,3 +28,18 @@ monitor health. You just provide the code.
 - Infrastructure as code control → use CloudFormation
 
 ---
+
+## 💡 Good to Know
+- Elastic Beanstalk = **PaaS** — you upload code, AWS handles the rest
+- You still have access to the underlying EC2 instances (unlike Lambda)
+- Beanstalk itself is free — you only pay for the resources it creates
+  (EC2 instances, load balancers, etc.)
+- Beanstalk is great for teams who want to focus on application
+  code, not infrastructure management
+
+---
+
+## ⚠️ Easy to Mix Up
+- Beanstalk is NOT serverless — it creates EC2 instances behind the scenes
+- **Beanstalk** (deploy your app) ≠ **CloudFormation** (define any infrastructure)
+  Beanstalk is application-focused, CloudFormation is infrastructure-focused
