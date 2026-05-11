@@ -27,3 +27,28 @@ Low-latency block storage — the data survives if you stop the instance (unlike
 - Object or file storage → use S3
 
 ---
+
+## 💡 Good to Know
+- EBS volumes are **AZ-specific** — a volume in London AZ-a cannot be attached to an instance in London AZ-b
+- To move an EBS volume to a different AZ: take a **snapshot** → create a new volume from the snapshot in the target AZ
+- **Delete on Termination** is enabled by default for root volumes — additional volumes are NOT deleted by default on termination
+- EBS = **Block storage** (vs S3=Object, EFS=File)
+- Snapshots are incremental — only changed blocks are saved after the first full snapshot
+
+---
+
+## ⚠️ Easy to Mix Up
+- EBS volumes can only be attached to **ONE instance at a time** (exception: io1/io2 multi-attach, but this is an advanced use case)
+- Snapshots are stored in S3 but you don't see them in your S3 buckets — they're managed through the EC2 console
+- **EBS** (survives instance stop) ≠ **Instance Store** (lost on stop or terminate)
+
+---
+
+## Storage Comparison
+| Feature | S3 | EBS | EFS |
+|---|---|---|---|
+| Type | Object | Block | File (NFS) |
+| Access | HTTP/S | Single EC2 | Multiple EC2 |
+| AZ scope | Region-wide | Single AZ | Multi-AZ |
+| Scales automatically | ✅ | ❌ | ✅ |
+| Use case | Files/backups/web | OS disk/DB | Shared file system |
