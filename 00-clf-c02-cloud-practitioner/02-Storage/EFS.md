@@ -28,3 +28,31 @@ Like data centre NFS share or NAS — multiple servers mount the same shared fil
 - Object storage → use S3
 
 ---
+
+## 💡 Good to Know
+- EFS automatically scales — you never provision capacity or worry
+  about running out of space
+- EFS works across **multiple AZs** — this makes it more resilient
+  than EBS (which is tied to a single AZ)
+- EFS is Linux-only because it uses the NFS protocol.
+  Windows requires FSx for Windows File Server.
+- EFS is more expensive than EBS per GB — only use it when you
+  genuinely need shared access across multiple instances
+
+---
+
+## ⚠️ Easy to Mix Up
+- **EFS** (multi-instance, multi-AZ, Linux only)
+  vs **EBS** (single instance, single AZ, any OS)
+- EFS is Linux-only — Windows needs FSx (a different service entirely)
+
+---
+
+## Storage Comparison Cheat Sheet
+| Feature | S3 | EBS | EFS |
+|---|---|---|---|
+| Type | Object | Block | File (NFS) |
+| Access | HTTP/HTTPS | Single EC2 | Multiple EC2 |
+| AZ scope | Region-wide | Single AZ | Multi-AZ |
+| Scales automatically | ✅ | ❌ | ✅ |
+| Use case | Files/backups/web | OS disk/DB | Shared file system |
