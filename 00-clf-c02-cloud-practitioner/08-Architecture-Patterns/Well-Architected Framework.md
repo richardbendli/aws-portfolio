@@ -34,3 +34,19 @@ best practices across 5 categories:
 **Business/Enterprise plans:** All checks + API access
 
 ---
+
+## AWS Well-Architected Tool
+A free interactive tool in the AWS console that walks you through
+the six pillars and evaluates your architecture against best practices.
+Produces a report with identified risks and improvement recommendations.
+
+---
+
+## Design Principles for Reliability
+- **Design for failure** — assume components will fail. Build accordingly.
+- **Multi-AZ** — spread across AZs to survive AZ-level failures
+- **Auto Scaling** — automatically replace failed or overloaded instances
+- **Loose coupling** — use queues (SQS) between components so one
+  failure doesn't cascade
+
+---
