@@ -50,3 +50,19 @@ Produces a report with identified risks and improvement recommendations.
   failure doesn't cascade
 
 ---
+
+## 💡 Good to Know
+- Know all **6 pillars** by name — the exam often describes a scenario
+  and asks which pillar it relates to
+- **Sustainability** (6th pillar, added 2021) = minimise environmental
+  impact through efficient resource usage
+- Trusted Advisor checks directly align with the Well-Architected pillars
+- The Well-Architected Tool is free to use — it doesn't require you
+  to change anything
+
+---
+
+## ⚠️ Easy to Mix Up
+- **Trusted Advisor** (automated checks against best practices)
+  vs **Well-Architected Tool** (interactive architectural review)
+  — they serve different purposes
