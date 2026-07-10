@@ -17,3 +17,20 @@ Your monitoring platform (Nagios, Zabbix, Datadog) — but built into AWS and pr
 - **Dashboards** — visual display of metrics and alarms
 - **Events / EventBridge** — respond to state changes in AWS services
   (e.g., EC2 state change → trigger Lambda)
+
+## Default Metrics CloudWatch Collects for EC2
+- CPU utilisation
+- Network in/out
+- Disk read/write (for instance store)
+
+> Note: Memory utilisation and disk space on EBS are NOT collected
+> by default — you need to install the CloudWatch Agent on the instance.
+
+## When to Use It ✅
+- Monitor EC2, RDS, Lambda, and any AWS service
+- Set billing alarms to avoid unexpected charges
+- Troubleshoot performance issues
+- Trigger Auto Scaling based on metrics
+- Centralise application logs
+
+---
