@@ -26,7 +26,7 @@ Your monitoring platform (Nagios, Zabbix, Datadog) — but built into AWS and pr
 > Note: Memory utilisation and disk space on EBS are NOT collected
 > by default — you need to install the CloudWatch Agent on the instance.
 
-## When to Use It ✅
+## When to Use It
 - Monitor EC2, RDS, Lambda, and any AWS service
 - Set billing alarms to avoid unexpected charges
 - Troubleshoot performance issues
@@ -34,3 +34,21 @@ Your monitoring platform (Nagios, Zabbix, Datadog) — but built into AWS and pr
 - Centralise application logs
 
 ---
+
+## 💡 Good to Know
+- **CloudWatch** = metrics and logs (what is happening RIGHT NOW)
+- **CloudTrail** = API audit log (who did what and when)
+- Standard monitoring = metric every 5 minutes (free)
+  Detailed monitoring = metric every 1 minute (additional cost)
+- CloudWatch Logs can retain logs for as long as you configure —
+  useful for compliance and troubleshooting
+- CloudWatch Agent is needed on EC2 to collect memory and disk metrics
+
+---
+
+## ⚠️ Easy to Mix Up
+- **CloudWatch** (performance metrics + logs + alarms)
+  vs **CloudTrail** (API call audit trail)
+  These are the most commonly confused pair in CLF-C02.
+- EC2 memory utilisation is NOT a default CloudWatch metric —
+  you need the CloudWatch Agent installed
